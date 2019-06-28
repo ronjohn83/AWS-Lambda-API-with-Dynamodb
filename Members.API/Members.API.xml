@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Members.API</name>
+    </assembly>
+    <members>
+        <member name="M:Members.API.Controllers.MembersController.GetMembers">
+            <summary>
+            Retrieves all members.
+            </summary>
+        </member>
+        <member name="M:Members.API.Controllers.MembersController.GetMemberById(System.String)">
+            <summary>
+            Retrieves a specific member by email.
+            </summary>
+            <param name="email"></param>
+        </member>
+        <member name="M:Members.API.Controllers.MembersController.AddMember">
+            <summary>
+            Creates a member by calling into https://randomuser.me/api/.
+            </summary>
+        </member>
+        <member name="M:Members.API.Controllers.MembersController.UpdateMember(System.String,Members.Core.Domain.Entities.Members)">
+            <summary>
+            Updates a specific member by email.
+            </summary>
+            <param name="email"></param>
+        </member>
+        <member name="M:Members.API.Controllers.MembersController.DeleteMember(System.String)">
+            <summary>
+            Deletes a specific member by email.
+            </summary>
+            <param name="email"></param>
+        </member>
+        <member name="T:Members.API.LambdaEntryPoint">
+            <summary>
+            This class extends from APIGatewayProxyFunction which contains the method FunctionHandlerAsync which is the 
+            actual Lambda function entry point. The Lambda handler field should be set to
+            
+            Members.RandomUserApi::Members.RandomUserApi.LambdaEntryPoint::FunctionHandlerAsync
+            </summary>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Members.API.LambdaEntryPoint.Init(Microsoft.AspNetCore.Hosting.IWebHostBuilder)" -->
+        <member name="T:Members.API.LocalEntryPoint">
+            <summary>
+            The Main function can be used to run the ASP.NET Core application locally using the Kestrel webserver.
+            </summary>
+        </member>
+    </members>
+</doc>
